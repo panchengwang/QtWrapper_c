@@ -21,9 +21,10 @@ find_package(Qt5 COMPONENTS Gui REQUIRED)
 include_directories(./ ../include)
 
 add_library(qt_c SHARED
-  qimage_c.c 
-  qpainter_c.c
-  qfont_c.c
+  qimage_c.cpp 
+  qpainter_c.cpp
+  qfont_c.cpp
+  qapplication_c.cpp
 )
 
 target_link_libraries(qt_c Qt5::Core Qt5::Gui)
