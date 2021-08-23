@@ -25,6 +25,9 @@ add_library(qt_c SHARED
   qpainter_c.cpp
   qfont_c.cpp
   qapplication_c.cpp
+  qcolor_c.cpp
+  qbrush_c.cpp
+  qpen_c.cpp
 )
 
 target_link_libraries(qt_c Qt5::Core Qt5::Gui)
